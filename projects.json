@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Project Name",
+        "category": "Category Name",
+        "categoryClass": "2020",
+        "thumbnail": "./img/phases/4.jpg",
+        "images": [
+            "./img/phases/1.jpg",
+            "./img/phases/2.jpg",
+            "./img/phases/3.jpg",
+            "./img/phases/5.jpg",
+            "./img/phases/6.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Project Name",
+        "category": "Category Name",
+        "categoryClass": "2022",
+        "thumbnail": "./img/phases/4.jpg",
+        "images": [
+            "./img/phases/1.jpg",
+            "./img/phases/2.jpg",
+            "./img/phases/3.jpg",
+            "./img/phases/5.jpg",
+            "./img/phases/6.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Project Name",
+        "category": "Category Name",
+        "categoryClass": "2020",
+        "thumbnail": "./img/phases/4.jpg",
+        "images": [
+            "./img/phases/1.jpg",
+            "./img/phases/2.jpg",
+            "./img/phases/3.jpg",
+            "./img/phases/5.jpg",
+            "./img/phases/6.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Project Name",
+        "category": "Category Name",
+        "categoryClass": "2021",
+        "thumbnail": "./img/phases/4.jpg",
+        "images": [
+            "./img/phases/1.jpg",
+            "./img/phases/2.jpg",
+            "./img/phases/3.jpg",
+            "./img/phases/5.jpg",
+            "./img/phases/6.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Project Name",
+        "category": "Category Name",
+        "categoryClass": "2021",
+        "thumbnail": "./img/phases/4.jpg",
+        "images": [
+            "./img/phases/1.jpg",
+            "./img/phases/2.jpg",
+            "./img/phases/3.jpg",
+            "./img/phases/5.jpg",
+            "./img/phases/6.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Project Name",
+        "category": "Category Name",
+        "categoryClass": "2022",
+        "thumbnail": "./img/phases/4.jpg",
+        "images": [
+            "./img/phases/1.jpg",
+            "./img/phases/2.jpg",
+            "./img/phases/3.jpg",
+            "./img/phases/5.jpg",
+            "./img/phases/6.jpg"
+        ]
+    }
+]
