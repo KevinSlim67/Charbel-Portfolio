@@ -1,86 +1,81 @@
 [
     {
         "id": 1,
-        "name": "Project Name",
+        "name": "D Square Showroom",
         "category": "Category Name",
         "categoryClass": "2020",
-        "thumbnail": "./img/phases/4.jpg",
+        "thumbnail": "./img/projects/d-square-showroom/1.jpg",
         "images": [
-            "./img/phases/1.jpg",
-            "./img/phases/2.jpg",
-            "./img/phases/3.jpg",
-            "./img/phases/5.jpg",
-            "./img/phases/6.jpg"
+            "./img/projects/d-square-showroom/2.jpg",
+            "./img/projects/d-square-showroom/3.jpg",
+            "./img/projects/d-square-showroom/4.jpg"
         ]
     },
     {
         "id": 2,
-        "name": "Project Name",
+        "name": "Al Matrak Palace",
         "category": "Category Name",
         "categoryClass": "2022",
-        "thumbnail": "./img/phases/4.jpg",
+        "thumbnail": "./img/projects/al-metrek-palace/1.jpg",
         "images": [
-            "./img/phases/1.jpg",
-            "./img/phases/2.jpg",
-            "./img/phases/3.jpg",
-            "./img/phases/5.jpg",
-            "./img/phases/6.jpg"
+            "./img/projects/al-metrek-palace/2.jpg",
+            "./img/projects/al-metrek-palace/3.jpg",
+            "./img/projects/al-metrek-palace/4.jpg"
         ]
     },
     {
         "id": 3,
-        "name": "Project Name",
+        "name": "Mirage Showroom",
         "category": "Category Name",
         "categoryClass": "2020",
-        "thumbnail": "./img/phases/4.jpg",
+        "thumbnail": "./img/projects/mirage-showroom/1.jpg",
         "images": [
-            "./img/phases/1.jpg",
-            "./img/phases/2.jpg",
-            "./img/phases/3.jpg",
-            "./img/phases/5.jpg",
-            "./img/phases/6.jpg"
+            "./img/projects/mirage-showroom/2.jpg",
+            "./img/projects/mirage-showroom/3.jpg",
+            "./img/projects/mirage-showroom/4.jpg",
+            "./img/projects/mirage-showroom/5.jpg",
+            "./img/projects/mirage-showroom/6.jpg",
+            "./img/projects/mirage-showroom/7.jpg",
+            "./img/projects/mirage-showroom/8.jpg",
+            "./img/projects/mirage-showroom/9.jpg",
+            "./img/projects/mirage-showroom/10.jpg",
+            "./img/projects/mirage-showroom/11.jpg",
+            "./img/projects/mirage-showroom/12.jpg"
         ]
     },
     {
         "id": 4,
-        "name": "Project Name",
+        "name": "Quadra Casa Showroom",
         "category": "Category Name",
         "categoryClass": "2021",
-        "thumbnail": "./img/phases/4.jpg",
+        "thumbnail": "./img/projects/quadra-casa-showroom/1.jpg",
         "images": [
-            "./img/phases/1.jpg",
-            "./img/phases/2.jpg",
-            "./img/phases/3.jpg",
-            "./img/phases/5.jpg",
-            "./img/phases/6.jpg"
+            "./img/projects/quadra-casa-showroom/2.jpg",
+            "./img/projects/quadra-casa-showroom/3.jpg",
+            "./img/projects/quadra-casa-showroom/4.jpg",
+            "./img/projects/quadra-casa-showroom/5.jpg",
+            "./img/projects/quadra-casa-showroom/6.jpg"
         ]
     },
     {
         "id": 5,
-        "name": "Project Name",
+        "name": "IMO Offices",
         "category": "Category Name",
         "categoryClass": "2021",
-        "thumbnail": "./img/phases/4.jpg",
+        "thumbnail": "./img/projects/imo-offices/1.jpg",
         "images": [
-            "./img/phases/1.jpg",
-            "./img/phases/2.jpg",
-            "./img/phases/3.jpg",
-            "./img/phases/5.jpg",
-            "./img/phases/6.jpg"
+            "./img/projects/imo-offices/2.jpg"
         ]
     },
     {
         "id": 6,
-        "name": "Project Name",
+        "name": "Sunrise Coffee Shop",
         "category": "Category Name",
         "categoryClass": "2022",
-        "thumbnail": "./img/phases/4.jpg",
+        "thumbnail": "./img/projects/sunrise-coffee-shop/1.jpg",
         "images": [
-            "./img/phases/1.jpg",
-            "./img/phases/2.jpg",
-            "./img/phases/3.jpg",
-            "./img/phases/5.jpg",
-            "./img/phases/6.jpg"
+            "./img/projects/sunrise-coffee-shop/2.jpg",
+            "./img/projects/sunrise-coffee-shop/3.jpg"
         ]
     }
 ]

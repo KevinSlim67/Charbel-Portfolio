@@ -121,8 +121,8 @@ nav.main-menu ul.menu > li.active > a::before {
 #hero .hero-logo {
   position: relative;
   filter: invert(1);
-  width: 25em;
-  margin-bottom: 2em;
+  width: 18em;
+  margin-bottom: 1.4em;
 }
 
 #hero a {
