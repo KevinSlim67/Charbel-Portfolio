@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 :root {
   --primary-lighter-color: #2c5c54;
@@ -23,6 +24,7 @@
 
   --font-main: "Raleway", sans-serif;
   --font-secondary: "Comfortaa", cursive;
+  --font-cursive: 'Great Vibes', cursive;
 
   --section-padding: 100px 0;
   --transition: all 0.3s ease;
@@ -131,7 +133,32 @@ nav.main-menu ul.menu > li.active > a::before {
 }
 
 #hero h1 {
-  font-size: 1.5em;
+  position: relative;
+  display: inline-block;
+  font-size: 2.2em;
+  font-family: var(--font-cursive) !important;
+  font-weight: 100;
+  margin-bottom: 0.5em;
+  padding: 0 1.4rem;
+}
+
+#hero h1::before, #hero h1::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 1.8em;
+  height: 2px;
+  background-color: white;
+}
+
+#hero h1::before {
+  left: 0;
+  transform: translateX(-100%) translateY(-50%);
+}
+
+#hero h1::after {
+  right: 0;
+  transform: translateX(100%) translateY(-50%);
 }
 
 #hero .typing {
