@@ -31,6 +31,26 @@
   --transition-05: all 0.5s ease;
 }
 
+::-webkit-scrollbar,
+scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track,
+scrollbar-track {
+  box-shadow: inset 0 0 6px var(--accent-color);
+}
+
+::-webkit-scrollbar-thumb,
+scrollbar-thumb {
+  background-color: var(--primary-color);
+  outline: 1px solid var(--accent-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -70,30 +90,7 @@
 
 /* Header =========================================== */
 
-#logo-img {
-  width: 200px !important;
-  height: 45px !important;
-  object-fit: contain;
-  filter: invert(1);
-}
 
-nav.main-menu ul.menu > li > a {
-  color: white;
-}
-
-nav.main-menu ul.menu > li > a:hover,
-nav.main-menu ul.menu > li.active > a {
-  color: var(--accent-color) !important;
-}
-
-nav.main-menu ul.menu > li > a::before,
-nav.main-menu ul.menu > li.active > a::before {
-  background-color: var(--accent-color);
-}
-
-.menu-mobile.show ul.menu > li a, .btn-show-menu-mobile ul.menu > li a::before{
-  color: var(--text-dark) !important;
-}
 
 /* ================================================== */
 
