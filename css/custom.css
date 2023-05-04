@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 :root {
   --primary-lighter-color: #2c5c54;
@@ -24,7 +24,7 @@
 
   --font-main: "Raleway", sans-serif;
   --font-secondary: "Comfortaa", cursive;
-  --font-cursive: 'Great Vibes', cursive;
+  --font-cursive: "Great Vibes", cursive;
 
   --section-padding: 100px 0;
   --transition: all 0.3s ease;
@@ -63,7 +63,7 @@ html {
 }
 
 .bg-light {
-  background-color: var(--bg-2) !important;
+  background-color: #fff9ec !important;
 }
 
 .button-1 {
@@ -88,9 +88,16 @@ html {
   mix-blend-mode: screen;
 }
 
+.title-header.white * {
+  color: white;
+}
+
+.title-header.white h3::before,
+.title-header.white h3::after {
+  background-color: white !important;
+}
+
 /* Header =========================================== */
-
-
 
 /* ================================================== */
 
@@ -139,8 +146,9 @@ html {
   padding: 0 1.4rem;
 }
 
-#hero h1::before, #hero h1::after {
-  content: '';
+#hero h1::before,
+#hero h1::after {
+  content: "";
   position: absolute;
   top: 50%;
   width: 1.8em;
@@ -174,7 +182,6 @@ html {
   display: none;
 }
 
-
 @media (max-width: 850px) {
   #hero .hero-content {
     font-size: 1.2rem;
@@ -196,7 +203,7 @@ html {
 @media (max-width: 500px) {
   #hero .hero-content {
     font-size: 0.7rem;
-  } 
+  }
 }
 
 @media (max-width: 500px) {
@@ -204,7 +211,6 @@ html {
     font-size: 0.6rem;
     gap: 0;
   }
-  
 }
 
 /* ================================================== */
@@ -259,6 +265,17 @@ html {
 /* ================================================== */
 
 /* Phases ============================================ */
+#phases {
+  background: linear-gradient(
+      to bottom,
+      rgba(var(--primary-color-rgb), 0.8),
+      rgba(var(--primary-color-rgb), 0.8)
+    ),
+    url(./../img/backgrounds/phases.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .phase {
   position: relative;
@@ -286,8 +303,8 @@ html {
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.6),
-    rgba(var(--primary-dark-color-rgb), 0.8)
+    rgba(0, 0, 0, 0.7),
+    rgba(var(--primary-dark-color-rgb), 0.9)
   );
   background-origin: content-box;
 }
@@ -445,6 +462,28 @@ html {
   color: white;
 }
 
+@media (max-width: 800px) {
+  .steps button {
+    color: var(--primary-color);
+    padding: 0.4rem 0.8rem; 
+    font-size: 1rem;
+  }
+
+  .steps button.step-border {
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .steps .step-border {
+    display: none;
+  }
+
+  .steps > div:first-of-type, .steps > div:last-of-type {
+    display: none;
+  }
+}
+
 .contents {
   position: relative;
   width: 100%;
@@ -483,6 +522,12 @@ html {
   margin-bottom: 2rem;
 }
 
+.content-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .content-box h5 {
   color: var(--text-dark);
   font-size: 1.6rem;
@@ -519,9 +564,126 @@ html {
 
 /* ================================================== */
 
-/* Projects ========================================= */
+/* Rooms ============================================ */
 
-.projects .filter-buttons {
+.projects {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.projects .project-box {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  transition: var(--transition);
+}
+
+.projects .project-box::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+  z-index: 2;
+  opacity: 0;
+}
+
+.projects .project-box .project-img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects .project-box .project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects .project-box .project-info {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  border: solid 2px rgba(var(--accent-color-rgb), 1);
+  width: calc(100% - 2.5rem);
+  height: calc(100% - 2.5rem);
+  opacity: 0;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: var(--transition);
+  z-index: 4;
+}
+
+.projects .project-box .project-info::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-accent);
+}
+
+.projects .project-box .project-info * {
+  color: white;
+  text-align: center;
+}
+
+.projects .project-box .project-info h4 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+.projects .project-box .project-info h5 {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.projects .project-box:hover::after {
+  opacity: 1;
+}
+
+.projects .project-box:hover .project-info {
+  opacity: 1;
+}
+
+.projects .slick-dots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .slick-dots li {
+  list-style: none;
+  position: relative;
+}
+
+.projects .slick-dots li button {
+  font-size: 0;
+  background-color: var(--text-dark);
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  padding: 0;
+  margin: 0 5px;
+}
+
+.projects .slick-dots li button:hover,
+.projects .slick-dots li.slick-active button {
+  background-color: var(--accent-color);
+}
+
+/* ================================================== */
+
+/* rooms ========================================= */
+
+.rooms .filter-buttons {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -529,7 +691,7 @@ html {
   font-size: 1rem;
 }
 
-.projects .filter-buttons button {
+.rooms .filter-buttons button {
   background-color: transparent;
   border: none;
   color: var(--text-dark);
@@ -538,20 +700,20 @@ html {
   font-weight: 600;
 }
 
-.projects .filter-buttons button.active,
-.projects .filter-buttons button:hover {
+.rooms .filter-buttons button.active,
+.rooms .filter-buttons button:hover {
   background-color: var(--primary-color);
   color: white;
 }
 
-.projects .project-box {
+.rooms .room-box {
   display: block;
   position: relative;
   height: 360px !important;
   background-color: #343a40;
 }
 
-.projects .project-box .project-img {
+.rooms .room-box .room-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -559,7 +721,7 @@ html {
   height: 100%;
 }
 
-.projects .project-box .project-img::after {
+.rooms .room-box .room-img::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -574,17 +736,17 @@ html {
   opacity: 0;
 }
 
-.projects .project-box .project-img img {
+.rooms .room-box .room-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.projects .project-box:hover .project-img::after {
+.rooms .room-box:hover .room-img::after {
   opacity: 1;
 }
 
-.projects .project-box .project-content {
+.rooms .room-box .room-content {
   position: absolute;
   display: flex;
   flex-direction: column-reverse;
@@ -597,8 +759,8 @@ html {
   opacity: 0;
 }
 
-.projects .project-box .project-content::before,
-.projects .project-box .project-content::after {
+.rooms .room-box .room-content::before,
+.rooms .room-box .room-content::after {
   content: "";
   position: absolute;
   width: 2.5rem;
@@ -608,42 +770,42 @@ html {
   transition: var(--transition);
 }
 
-.projects .project-box .project-content::before {
+.rooms .room-box .room-content::before {
   border-style: solid none none solid;
   top: 1.5rem;
   left: 1.5rem;
 }
 
-.projects .project-box .project-content::after {
+.rooms .room-box .room-content::after {
   bottom: 1.5rem;
   right: 1.5rem;
   border-style: none solid solid none;
 }
 
-.projects .project-box:hover .project-content::before,
-.projects .project-box:hover .project-content::after {
+.rooms .room-box:hover .room-content::before,
+.rooms .room-box:hover .room-content::after {
   transform: rotate(360deg);
 }
 
-.projects .project-box .project-content * {
+.rooms .room-box .room-content * {
   color: white;
 }
 
-.projects .project-box .project-content h4 {
+.rooms .room-box .room-content h4 {
   font-size: 1.5em;
   letter-spacing: 1px;
   text-align: left;
   margin: 0;
 }
 
-.projects .project-box .project-content h5 {
+.rooms .room-box .room-content h5 {
   font-size: 0.9em;
   letter-spacing: 1px;
   text-align: left;
   margin: 0;
 }
 
-.projects .project-box:hover .project-content {
+.rooms .room-box:hover .room-content {
   opacity: 1;
 }
 
