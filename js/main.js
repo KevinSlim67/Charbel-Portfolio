@@ -55,12 +55,12 @@ jQuery(function ($) {
     $(window).scroll(function () {
 
 
-        if (matchMedia('only screen and (min-width: 1200px)').matches) {
-            if ($(window).scrollTop() >= 50) {
-                $('.ttm-stickable-header').addClass('fixed-header');
+        if (matchMedia('only screen and (min-width: 0px)').matches) {
+            if ($(window).scrollTop() <= 200) {
+                $('nav').addClass('transparent');
             }
             else {
-                $('.ttm-stickable-header').removeClass('fixed-header');
+                $('nav').removeClass('transparent');
             }
         }
     });
@@ -114,8 +114,6 @@ jQuery(function ($) {
                                 $(this).closest(".col-menu").find(".content").stop().toggleClass('active');
                                 $(this).closest(".col-menu").toggleClass("active");
                                 return false;
-                                e.preventDefault();
-
                             });
 
                         });
@@ -130,7 +128,6 @@ jQuery(function ($) {
         $(this).toggleClass('is-active');
         $('.menu-mobile').toggleClass('show');
         return false;
-        e.preventDefault();
     });
 
     // Initialize
@@ -469,62 +466,10 @@ jQuery(document).ready(function () {
     });
 });
 
-  // image loaded portfolio init
-  var gridfilter = $(".grid");
-  if (gridfilter.length) {
-    $(".grid").imagesLoaded(function () {
-      $(".gridFilter").on("click", "button", function () {
-        console.log("test");
-        var filterValue = $(this).attr("data-filter");
-        $grid.isotope({
-          filter: filterValue,
-        });
-      });
-      var $grid = $(".grid").isotope({
-        itemSelector: ".grid-item",
-        percentPosition: true,
-        masonry: {
-          columnWidth: ".grid-item",
-        },
-      });
-    });
-  }
+$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
 
-// project Filter
-if ($(".gridFilter button").length) {
-    var projectfiler = $(".gridFilter button");
-    if (projectfiler.length) {
-        $(".gridFilter button").on("click", function (event) {
-            $(this).siblings(".active").removeClass("active");
-            $(this).addClass("active");
-            event.preventDefault();
-        });
-    }
-}
-
-$('.projects-slider').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 900,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      },
-      {
-        breakpoint: 0,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+});

@@ -3,7 +3,7 @@
         "id": 1,
         "name": "D Square Showroom",
         "category": "Category Name",
-        "categoryClass": "2020",
+        "categoryClass": "y2020",
         "thumbnail": "./img/projects/d-square-showroom/1.jpg",
         "images": [
             "./img/projects/d-square-showroom/2.jpg",
@@ -15,7 +15,7 @@
         "id": 2,
         "name": "Al Matrak Palace",
         "category": "Category Name",
-        "categoryClass": "2022",
+        "categoryClass": "y2022",
         "thumbnail": "./img/projects/al-metrek-palace/1.jpg",
         "images": [
             "./img/projects/al-metrek-palace/2.jpg",
@@ -27,7 +27,7 @@
         "id": 3,
         "name": "Mirage Showroom",
         "category": "Category Name",
-        "categoryClass": "2020",
+        "categoryClass": "y2020",
         "thumbnail": "./img/projects/mirage-showroom/1.jpg",
         "images": [
             "./img/projects/mirage-showroom/2.jpg",
@@ -47,7 +47,7 @@
         "id": 4,
         "name": "Quadra Casa Showroom",
         "category": "Category Name",
-        "categoryClass": "2021",
+        "categoryClass": "y2021",
         "thumbnail": "./img/projects/quadra-casa-showroom/1.jpg",
         "images": [
             "./img/projects/quadra-casa-showroom/2.jpg",
@@ -61,7 +61,7 @@
         "id": 5,
         "name": "IMO Offices",
         "category": "Category Name",
-        "categoryClass": "2021",
+        "categoryClass": "y2021",
         "thumbnail": "./img/projects/imo-offices/1.jpg",
         "images": [
             "./img/projects/imo-offices/2.jpg"
@@ -71,7 +71,7 @@
         "id": 6,
         "name": "Sunrise Coffee Shop",
         "category": "Category Name",
-        "categoryClass": "2022",
+        "categoryClass": "y2022",
         "thumbnail": "./img/projects/sunrise-coffee-shop/1.jpg",
         "images": [
             "./img/projects/sunrise-coffee-shop/2.jpg",
