@@ -91,7 +91,7 @@ html {
 .button-3 {
   position: relative;
   display: block;
-  padding: 1.5rem 2.5rem;
+  padding: 0.8rem 2rem;
   font-size: 1.2rem;
   font-weight: 500;
   background-color: var(--accent-color);
@@ -114,6 +114,7 @@ html {
 .title-header.white h3::after {
   background-color: white !important;
 }
+
 
 /* Header =========================================== */
 .nav {
@@ -177,15 +178,15 @@ html {
 
 .nav div.main_list ul li {
   width: auto;
-  height: 65px;
+  height: 40px;
   padding: 0;
-  padding-right: 2rem;
+  padding-right: 2rem !important;
 }
 
 .nav div.main_list ul li a {
   text-decoration: none;
   color: #fff;
-  line-height: 65px;
+  line-height: 40px;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -217,7 +218,9 @@ html {
   .nav div.main_list ul {
       flex-direction: column;
       width: 100%;
-      height: 100vh;
+      /* height: 100vh; */
+      height: auto;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
       right: 0;
       bottom: 0;
       background-color: white;
@@ -227,18 +230,24 @@ html {
   .nav div.main_list ul li {
       width: 100%;
       text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
   }
 
   .nav div.main_list ul li a {
       text-align: center;
-      width: 100%;
+      width: fit-content;
       font-size: 1em;
-      padding: 10px 20px;
       color: var(--text-dark);
   }
 
   .nav div.media_button {
       display: block;
+  }
+
+  .nav .navlinks li {
+    border: solid 1px #f4f4f4;
   }
 }
 
@@ -902,6 +911,18 @@ html {
 .projects {
   max-width: 2000px;
   margin: 0 auto;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url(./../img/backgrounds/projects.jpg);
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--primary-color-rgb), 0.8),
+    rgba(var(--primary-color-rgb), 0.8)
+  ),
+  url(./../img/backgrounds/projects.jpg);
 }
 
 .projects .project-slider {
@@ -909,8 +930,12 @@ html {
  transition: var(--transition);
 }
 
-.projects .slick-current .project-box {
-  border: solid 8px var(--primary-color);
+.projects .slick-slide {
+  transition: var(--transition);
+}
+
+.projects .slick-slide:not(.slick-current) .project-box {
+  margin: 0.8rem;
   padding: 0 !important;
 }
 
@@ -1000,6 +1025,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 0;
 }
 
 .projects .slick-dots li {
@@ -1009,7 +1035,7 @@ html {
 
 .projects .slick-dots li button {
   font-size: 0;
-  background-color: var(--text-dark);
+  background-color: white;
   border-radius: 50%;
   width: 10px !important;
   height: 10px !important;
@@ -1020,6 +1046,22 @@ html {
 .projects .slick-dots li button:hover,
 .projects .slick-dots li.slick-active button {
   background-color: var(--accent-color);
+}
+
+.projects #project-description {
+  max-width: 950px;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.projects .button-3 {
+  margin: 1.5rem auto 0;
+  font-size: 1rem
 }
 
 /* ================================================== */
@@ -1162,25 +1204,115 @@ html {
 /* Contact ========================================== */
 
 #contact {
-  background: linear-gradient(
-      to bottom,
-      rgba(var(--primary-color-rgb), 0.8),
-      rgba(var(--primary-color-rgb), 0.8)
-    ),
-    url(./../img/backgrounds/phases.jpg);
+  background: url(./../img/backgrounds/contact.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 #contact .left {
+  background-color: rgba(var(--primary-color-rgb), 0.95);
+  border-style: solid;
+  border-color: var(--accent-color);
+  border-width: 2px;
+}
+
+#contact .right {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  border-style: solid solid solid none;
+  border-color: var(--accent-color);
+  border-width: 2px;
+}
+
+@media (max-width: 990px) {
+  #contact .left {
+
+  }
+
+  #contact .right {
+  border-style: none solid solid solid;
+  }
+}
+
+#contact .left * {
+  color: white;
+}
+
+#contact .left ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+#contact .left a {
+  transition: var(--transition);
+}
+
+#contact .left a:hover {
+  color: var(--accent-color);
+}
+
+#contact .left ul li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+#contact .left h4 {
+  font-size: 1.3rem;
+  line-height: 40px;
+  margin-bottom: 0;
+} 
+
+#contact .left p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+#contact .contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#contact .contact-info li .tel {
+  font-family: var(--font-secondary) !important;
+}
+
+#contact .left hr {
+  width: 100%;
+  background-color: var(--accent-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#contact .contact-info li i {
+  font-size: 2.5rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--transition);
+}
+
+#contact .contact-info li i:hover {
   background-color: var(--accent-color);
 }
 
-#contact .left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+#contact .socials {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+#contact .socials a {
+  font-size: 1.1rem;
+}
+
+#contact .socials a i {
+  transition: var(--transition);
+}
+
+#contact .socials a:hover i {
+  color: var(--accent-color);
 }
 
 #contact input, #contact textarea {

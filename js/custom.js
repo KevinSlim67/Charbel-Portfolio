@@ -10,10 +10,12 @@ fetch('projects.json')
             projectsList.appendChild(projectBox);
         });
 
+        //configure slider settings
         $('.projects-slider').slick({
             centerMode: true,
             centerPadding: '40px',
             slidesToShow: 3,
+            infinite: true,
             dots: true,
             responsive: [
                 {
@@ -22,6 +24,7 @@ fetch('projects.json')
                         arrows: false,
                         centerMode: true,
                         centerPadding: '40px',
+                        infinite: true,
                         slidesToShow: 1
                     }
                 },
@@ -31,22 +34,43 @@ fetch('projects.json')
                         arrows: false,
                         centerMode: true,
                         centerPadding: '40px',
+                        infinite: true,
                         slidesToShow: 1
                     }
                 }
             ]
         });
+
+        changeDescription();
+
+        $('.projects-slider').on('afterChange', function (event, slick, direction) {
+            changeDescription();
+        });
+
+        
+        $('.projects-slider').on('swipe', function (event, slick, direction) {
+            changeDescription();
+        });
+
+        //change project description text
+        function changeDescription() {
+            const projectDescriptionDiv = document.querySelector('#project-description');
+            const selectedSlide = projectsList.querySelector('.slick-current .project-box');
+            projectDescriptionDiv.innerHTML = selectedSlide.getAttribute('p-desc');
+        }
     })
     .catch(error => console.error(error));
 
 function generateProject(project) {
-    const { id, name, category, thumbnail, images } = project;
+    const { id, name, category, thumbnail, images, description } = project;
 
     const projectBox = document.createElement('div');
     projectBox.classList.add('px-2');
+    projectBox.setAttribute('id', `project-${id}`);
+    projectBox.setAttribute('p-desc', description);
 
     projectBox.innerHTML = `
-                <a href="${thumbnail}" class="project-box fancybox zoom-btn" data-fancybox="p-${id}">
+                <a href="${thumbnail}" id="project-${id}" p-desc="${description}" class="project-box fancybox zoom-btn" data-fancybox="p-${id}">
                     <div class="project-img">
                         <img src="${thumbnail}" alt="${name}">
                     </div>
@@ -61,8 +85,6 @@ function generateProject(project) {
 
     return projectBox;
 }
-
-
 
 // Get reference to the rooms list element
 const roomsList = document.getElementById('grid-container');

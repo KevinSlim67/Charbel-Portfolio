@@ -1,75 +1,79 @@
 [
-    {
-        "id": 1,
-        "name": "D Square Showroom",
-        "category": "Category Name",
-        "thumbnail": "./img/projects/d-square-showroom/1.jpg",
-        "images": [
-            "./img/projects/d-square-showroom/2.jpg",
-            "./img/projects/d-square-showroom/3.jpg",
-            "./img/projects/d-square-showroom/4.jpg"
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Al Matrak Palace",
-        "category": "Category Name",
-        "thumbnail": "./img/projects/al-metrek-palace/1.jpg",
-        "images": [
-            "./img/projects/al-metrek-palace/2.jpg",
-            "./img/projects/al-metrek-palace/3.jpg",
-            "./img/projects/al-metrek-palace/4.jpg"
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Mirage Showroom",
-        "category": "Category Name",
-        "thumbnail": "./img/projects/mirage-showroom/1.jpg",
-        "images": [
-            "./img/projects/mirage-showroom/2.jpg",
-            "./img/projects/mirage-showroom/3.jpg",
-            "./img/projects/mirage-showroom/4.jpg",
-            "./img/projects/mirage-showroom/5.jpg",
-            "./img/projects/mirage-showroom/6.jpg",
-            "./img/projects/mirage-showroom/7.jpg",
-            "./img/projects/mirage-showroom/8.jpg",
-            "./img/projects/mirage-showroom/9.jpg",
-            "./img/projects/mirage-showroom/10.jpg",
-            "./img/projects/mirage-showroom/11.jpg",
-            "./img/projects/mirage-showroom/12.jpg"
-        ]
-    },
-    {
-        "id": 4,
-        "name": "Quadra Casa Showroom",
-        "category": "Category Name",
-        "thumbnail": "./img/projects/quadra-casa-showroom/1.jpg",
-        "images": [
-            "./img/projects/quadra-casa-showroom/2.jpg",
-            "./img/projects/quadra-casa-showroom/3.jpg",
-            "./img/projects/quadra-casa-showroom/4.jpg",
-            "./img/projects/quadra-casa-showroom/5.jpg",
-            "./img/projects/quadra-casa-showroom/6.jpg"
-        ]
-    },
-    {
-        "id": 5,
-        "name": "IMO Offices",
-        "category": "Category Name",
-        "thumbnail": "./img/projects/imo-offices/1.jpg",
-        "images": [
-            "./img/projects/imo-offices/2.jpg"
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Sunrise Coffee Shop",
-        "category": "Category Name",
-        "thumbnail": "./img/projects/sunrise-coffee-shop/1.jpg",
-        "images": [
-            "./img/projects/sunrise-coffee-shop/2.jpg",
-            "./img/projects/sunrise-coffee-shop/3.jpg"
-        ]
-    }
+  {
+    "id": 1,
+    "name": "D Square Showroom",
+    "category": "Category Name",
+    "thumbnail": "./img/projects/d-square-showroom/1.jpg",
+    "description": "The simplest definition of a showroom is basically a space that is used to display samples of goods that are for sale. The purpose of the showroom is quite multifaceted, which definitely reflects into its interior design. In this project, we decide to use the showroom floor and Walls to feature different kinds of Tiles patterns and options of SICIS \"The Art of Mosaics and the concept of Luxury\".",
+    "images": [
+      "./img/projects/d-square-showroom/2.jpg",
+      "./img/projects/d-square-showroom/3.jpg",
+      "./img/projects/d-square-showroom/4.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Al Matrak Palace",
+    "category": "Category Name",
+    "thumbnail": "./img/projects/al-metrek-palace/1.jpg",
+    "description": "In between Est and Ouest, Luxurious touch takes us to the 15th Century with contemporary furniture pieces chosen to fit the nowaday Interiors.",
+    "images": [
+      "./img/projects/al-metrek-palace/2.jpg",
+      "./img/projects/al-metrek-palace/3.jpg",
+      "./img/projects/al-metrek-palace/4.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mirage Showroom",
+    "category": "Category Name",
+    "thumbnail": "./img/projects/mirage-showroom/1.jpg",
+    "description": "We aimed to create an unforgettable experience for the MIRAGE showroom. Therefore, the impact on the visitors is essential to impress the clients so they can enjoy discovering the strength of MIRAGE collections and products.<br>Our main concern was selecting slabs that create an unusual combination between materials and patterns so that they can feel the uniqueness of the products.",
+    "images": [
+      "./img/projects/mirage-showroom/2.jpg",
+      "./img/projects/mirage-showroom/3.jpg",
+      "./img/projects/mirage-showroom/4.jpg",
+      "./img/projects/mirage-showroom/5.jpg",
+      "./img/projects/mirage-showroom/6.jpg",
+      "./img/projects/mirage-showroom/7.jpg",
+      "./img/projects/mirage-showroom/8.jpg",
+      "./img/projects/mirage-showroom/9.jpg",
+      "./img/projects/mirage-showroom/10.jpg",
+      "./img/projects/mirage-showroom/11.jpg",
+      "./img/projects/mirage-showroom/12.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Quadra Casa Showroom",
+    "category": "Category Name",
+    "thumbnail": "./img/projects/quadra-casa-showroom/1.jpg",
+    "description": "",
+    "images": [
+      "./img/projects/quadra-casa-showroom/2.jpg",
+      "./img/projects/quadra-casa-showroom/3.jpg",
+      "./img/projects/quadra-casa-showroom/4.jpg",
+      "./img/projects/quadra-casa-showroom/5.jpg",
+      "./img/projects/quadra-casa-showroom/6.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "IMO Offices",
+    "category": "Category Name",
+    "thumbnail": "./img/projects/imo-offices/1.jpg",
+    "description": "In the heart of Saudi Arabia, an interior space for a lobby is inspired from the sand and stones of the desert, a nice combination in between wooden paneling, abstract wallpaper and a ceramic accent for reception counter, this mix of materials gives the feeling of nature with the horizon of earth in LED light system.",
+    "images": ["./img/projects/imo-offices/2.jpg"]
+  },
+  {
+    "id": 6,
+    "name": "Sunrise Coffee Shop",
+    "category": "Category Name",
+    "thumbnail": "./img/projects/sunrise-coffee-shop/1.jpg",
+    "description": "The Earth has Music for those who listen..<br>Adding to our select portfolio of treasures in the Sunshine State, we are pleased to share with you this rare jewel in saudi arabia. Much thought was put into choosing the perfect colors. A rich, celestial gold and blue that complements the bright, solar-inspired interiors of this high-end hospitality interiors.",
+    "images": [
+      "./img/projects/sunrise-coffee-shop/2.jpg",
+      "./img/projects/sunrise-coffee-shop/3.jpg"
+    ]
+  }
 ]
