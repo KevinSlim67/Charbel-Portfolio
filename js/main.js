@@ -325,9 +325,9 @@ jQuery(function ($) {
                 });
             });
 
-            $('.portfolio-filter li').on('click', function () {
-                var selector = $(this).find("a").attr('data-filter');
-                $('.portfolio-filter li').removeClass('active');
+            $('.filter-buttons button').on('click', function () {
+                var selector = $(this).find("button").attr('data-filter');
+                $('.filter-buttons button').removeClass('active');
                 $(this).addClass('active');
                 $container.isotope({ filter: selector });
                 return false;

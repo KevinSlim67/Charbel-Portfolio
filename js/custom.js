@@ -13,7 +13,7 @@ fetch('projects.json')
         //configure slider settings
         $('.projects-slider').slick({
             centerMode: true,
-            centerPadding: '40px',
+            centerPadding: '20px',
             slidesToShow: 3,
             infinite: true,
             dots: true,
@@ -23,7 +23,7 @@ fetch('projects.json')
                     settings: {
                         arrows: false,
                         centerMode: true,
-                        centerPadding: '40px',
+                        centerPadding: '20px',
                         infinite: true,
                         slidesToShow: 1
                     }
@@ -33,7 +33,7 @@ fetch('projects.json')
                     settings: {
                         arrows: false,
                         centerMode: true,
-                        centerPadding: '40px',
+                        centerPadding: '20px',
                         infinite: true,
                         slidesToShow: 1
                     }
@@ -127,13 +127,12 @@ function generateRoom(room) {
     roomBox.innerHTML = `
             <a href="${thumbnail}" class="room-box fancybox zoom-btn" data-fancybox="${id}">
             <div class="room-img">
-                <img src="${thumbnail}" alt="${name}">
+                <img src="${thumbnail}" alt="${name}" loading="lazy">
             </div>
 
             <div class="room-content">
                 <div class="bottom">
-                    <h5>${category}</h5>
-                    <h4>${name}</h4>
+                    <h4>${category}</h4>
                 </div>
             </div>
 
