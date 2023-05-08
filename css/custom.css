@@ -521,7 +521,7 @@ html {
   transform: translateX(100%) translateY(-50%);
 }
 
-#hero .typing {
+#hero .typed, #hero .typed-cursor {
   font-size: 3em;
   font-weight: 700;
   text-transform: uppercase;
@@ -530,7 +530,7 @@ html {
 
 #hero .location {
   font-size: 1em;
-  margin-top: 2em;
+  margin-top: 0.2rem;
 }
 
 #hero rs-arrow {
