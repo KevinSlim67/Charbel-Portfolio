@@ -100,7 +100,7 @@ fetch('rooms.json')
 
         $(".grid-container").each(function () {
             var e = $(this);
-            e.imagesLoaded(function () {
+            (function () {
                 var $grid = e.isotope({
                     layoutMode: "masonry",
                     originLeft: true
@@ -112,7 +112,7 @@ fetch('rooms.json')
                             filter: filterValue
                         }), !1
                 });
-            });
+            })();
         });
     })
     .catch(error => console.error(error));
