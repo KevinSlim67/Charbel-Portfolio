@@ -9,7 +9,8 @@
       "./img/projects/d-square-showroom/2.jpg",
       "./img/projects/d-square-showroom/3.jpg",
       "./img/projects/d-square-showroom/4.jpg"
-    ]
+    ],
+    "collaborator": "Khaldoun al Zaatari"
   },
   {
     "id": 2,
@@ -21,12 +22,13 @@
       "./img/projects/al-metrek-palace/2.jpg",
       "./img/projects/al-metrek-palace/3.jpg",
       "./img/projects/al-metrek-palace/4.jpg"
-    ]
+    ],
+    "collaborator": ""
   },
   {
-    "id": 3,
+    "id": 301,
     "name": "Mirage Showroom",
-    "category": "Milano - Italy",
+    "category": "Milano - Italy (Part 1)",
     "thumbnail": "./img/projects/mirage-showroom/1.jpg",
     "description": "We aimed to create an unforgettable experience for the MIRAGE showroom. Therefore, the impact on the visitors is essential to impress the clients so they can enjoy discovering the strength of MIRAGE collections and products.<br>Our main concern was selecting slabs that create an unusual combination between materials and patterns so that they can feel the uniqueness of the products.",
     "images": [
@@ -34,28 +36,39 @@
       "./img/projects/mirage-showroom/3.jpg",
       "./img/projects/mirage-showroom/4.jpg",
       "./img/projects/mirage-showroom/5.jpg",
-      "./img/projects/mirage-showroom/6.jpg",
-      "./img/projects/mirage-showroom/7.jpg",
+      "./img/projects/mirage-showroom/6.jpg"
+    ],
+    "collaborator": "Khaldoun al Zaatari"
+  },
+  {
+    "id": 302,
+    "name": "Mirage Showroom",
+    "category": "Milano - Italy (Part 2)",
+    "thumbnail": "./img/projects/mirage-showroom/7.jpg",
+    "description": "We aimed to create an unforgettable experience for the MIRAGE showroom. Therefore, the impact on the visitors is essential to impress the clients so they can enjoy discovering the strength of MIRAGE collections and products.<br>Our main concern was selecting slabs that create an unusual combination between materials and patterns so that they can feel the uniqueness of the products.",
+    "images": [
       "./img/projects/mirage-showroom/8.jpg",
       "./img/projects/mirage-showroom/9.jpg",
       "./img/projects/mirage-showroom/10.jpg",
       "./img/projects/mirage-showroom/11.jpg",
       "./img/projects/mirage-showroom/12.jpg"
-    ]
+    ],
+    "collaborator": "Khaldoun al Zaatari"
   },
   {
     "id": 4,
     "name": "Quadra Casa Showroom",
-    "category": "Riyadh - Saudi Arabia",
+    "category": "Bucharest - Romania",
     "thumbnail": "./img/projects/quadra-casa-showroom/1.jpg",
-    "description": "Bucharest- Romania",
+    "description": "",
     "images": [
       "./img/projects/quadra-casa-showroom/2.jpg",
       "./img/projects/quadra-casa-showroom/3.jpg",
       "./img/projects/quadra-casa-showroom/4.jpg",
       "./img/projects/quadra-casa-showroom/5.jpg",
       "./img/projects/quadra-casa-showroom/6.jpg"
-    ]
+    ],
+    "collaborator": "Khaldoun al Zaatari"
   },
   {
     "id": 5,
@@ -63,7 +76,8 @@
     "category": "Riyadh - Saudi Arabia",
     "thumbnail": "./img/projects/imo-offices/1.jpg",
     "description": "In the heart of Saudi Arabia, an interior space for a lobby is inspired from the sand and stones of the desert, a nice combination in between wooden paneling, abstract wallpaper and a ceramic accent for reception counter, this mix of materials gives the feeling of nature with the horizon of earth in LED light system.",
-    "images": ["./img/projects/imo-offices/2.jpg"]
+    "images": ["./img/projects/imo-offices/2.jpg"],
+    "collaborator": ""
   },
   {
     "id": 6,
@@ -74,6 +88,7 @@
     "images": [
       "./img/projects/sunrise-coffee-shop/2.jpg",
       "./img/projects/sunrise-coffee-shop/3.jpg"
-    ]
+    ],
+    "collaborator": ""
   }
 ]

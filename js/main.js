@@ -482,3 +482,75 @@ $(".typed").each(function () {
         backDelay: 1500,
     });
 });
+
+
+$('.brands-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                slidesToShow: 4
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                slidesToShow: 1
+            }
+        },
+    ]
+});

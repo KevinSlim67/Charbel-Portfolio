@@ -47,7 +47,7 @@ fetch('projects.json')
             changeDescription();
         });
 
-        
+
         $('.projects-slider').on('swipe', function (event, slick, direction) {
             changeDescription();
         });
@@ -62,7 +62,12 @@ fetch('projects.json')
     .catch(error => console.error(error));
 
 function generateProject(project) {
-    const { id, name, category, thumbnail, images, description } = project;
+    const { id, name, category, thumbnail, images, description, collaborator } = project;
+
+    let collaboratorText = '';
+    if (collaborator !== '') {
+        collaboratorText = `Collaborated with<br><span>${collaborator}</span>`;
+    }
 
     const projectBox = document.createElement('div');
     projectBox.classList.add('px-2');
@@ -75,6 +80,7 @@ function generateProject(project) {
                         <img src="${thumbnail}" alt="${name}">
                     </div>
                     <div class="project-info">
+                        <div class="collaboration">${collaboratorText}</div>
                         <h4>${name}</h4>
                         <h5>${category}</h5>
                     </div>
@@ -105,14 +111,22 @@ fetch('rooms.json')
                     layoutMode: "masonry",
                     originLeft: true
                 });
+
                 $(".filter-buttons").find("button").on("click", function () {
                     var filterValue = $(this).attr("data-filter");
+                    console.log(filterValue)
                     return $(".filter-buttons").find("button").removeClass("active"), $(this).addClass("active"),
                         $grid.isotope({
                             filter: filterValue
                         }), !1
                 });
+
+                //starts the grid with the living-space items first
+                $grid.isotope({
+                    filter: '.living-space'
+                }), !1
             })();
+
         });
     })
     .catch(error => console.error(error));
@@ -142,3 +156,4 @@ function generateRoom(room) {
 
     return roomBox;
 }
+
