@@ -488,7 +488,14 @@ html {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(./../img/backgrounds/hero.jpg);
   background-size: cover;
+  background-position: center;
 }
+
+@media (max-width: 600px) {
+  #hero {
+    background-position: 62%;
+  }
+} 
 
 #hero .hero-content {
   position: absolute;

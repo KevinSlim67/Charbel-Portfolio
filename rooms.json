@@ -9,15 +9,6 @@
         ]
     },
     {
-        "id": "lp-2",
-        "category": "Living Space",
-        "categoryClass": "living-space",
-        "thumbnail": "./img/rooms/living-spaces/2/1.jpg",
-        "images": [
-            "./img/rooms/living-spaces/2/2.jpg"
-        ]
-    },
-    {
         "id": "lp-3",
         "category": "Living Space",
         "categoryClass": "living-space",
