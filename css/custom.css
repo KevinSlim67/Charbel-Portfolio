@@ -23,8 +23,8 @@
   --text-white: "";
 
   --font-main: "Raleway", sans-serif;
-  --font-secondary: "Comfortaa", cursive;
-  --font-cursive: "Great Vibes", cursive;
+  --font-secondary: "Comfortaa", "Times New Roman";
+  --font-cursive: "Great Vibes", "Times New Roman";
 
   --section-padding: 100px 0;
   --transition: all 0.3s ease;
@@ -914,6 +914,7 @@ html {
   display: block;
   background: transparent;
   border: 2px solid var(--primary-color);
+  border-radius: 0;
   color: var(--primary-color);
   padding: 0.8rem 1rem;
   display: flex;
