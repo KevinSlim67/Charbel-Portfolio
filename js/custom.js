@@ -145,6 +145,7 @@ function generateRoom(room) {
             </div>
 
             <div class="room-content">
+                <i class="room-icon bi bi-search"></i>
                 <div class="bottom">
                     <h4>${category}</h4>
                 </div>
