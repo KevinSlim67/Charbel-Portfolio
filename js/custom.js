@@ -77,7 +77,7 @@ function generateProject(project) {
     projectBox.innerHTML = `
                 <a href="${thumbnail}" id="project-${id}" p-desc="${description}" class="project-box fancybox zoom-btn" data-fancybox="p-${id}">
                     <div class="project-img">
-                        <img src="${thumbnail}" alt="${name}">
+                        <img src="${thumbnail}" alt="${name}" loading="lazy">
                     </div>
                     <div class="project-info">
                         <div class="collaboration">${collaboratorText}</div>
