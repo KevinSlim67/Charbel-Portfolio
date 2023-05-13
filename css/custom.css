@@ -1193,27 +1193,46 @@ html {
   left: 0;
   padding: 1rem;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   width: 100%;
 }
 
 .projects .project-box .project-info .collaboration span {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .projects .project-box:hover::after {
   opacity: 1;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1200px) and (min-width: 900px) {
   .projects .project-box .project-info h4 {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
   }
 
   .projects .project-box .project-info h5 {
+    font-size: 0.7rem;
+  }
+
+  .projects .project-box .project-info .collaboration {
+    font-size: 1.1rem;
+  }
+  
+  .projects .project-box .project-info .collaboration span {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .projects .project-box .project-info h4 {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .projects .project-box .project-info h5 {
+    font-size: 0.7rem;
   }
 
   .projects .project-box .project-info .collaboration {

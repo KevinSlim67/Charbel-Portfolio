@@ -82,7 +82,7 @@ function generateProject(project) {
                         <h4>${name}</h4>
                         <h5>${category}</h5>
                     </div>
-                
+                ${images.map(i => `<a data-fancybox="${id}" href="${i}" class="zoom-btn rooms-image invisible"></a>`).join('')}
             </a>
         `;
 
