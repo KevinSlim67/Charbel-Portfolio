@@ -75,7 +75,7 @@ function generateProject(project) {
     projectBox.setAttribute('p-desc', description);
 
     projectBox.innerHTML = `
-                <a href="${thumbnail}" id="project-${id}" p-desc="${description}" class="project-box fancybox zoom-btn" data-fancybox="p-${id}">
+                <a href="${thumbnail}" id="project-${id}" p-desc="${description}" class="project-box fancybox zoom-btn" data-fancybox="${id}">
                     <div class="project-img">
                         <img src="${thumbnail}" alt="${name}" loading="lazy">
                     </div>
