@@ -71,8 +71,6 @@ function generateProject(project) {
 
     const projectBox = document.createElement('div');
     projectBox.classList.add('px-2');
-    projectBox.setAttribute('id', `project-${id}`);
-    projectBox.setAttribute('p-desc', description);
 
     projectBox.innerHTML = `
                 <a href="${thumbnail}" id="project-${id}" p-desc="${description}" class="project-box fancybox zoom-btn" data-fancybox="${id}">
@@ -84,7 +82,7 @@ function generateProject(project) {
                         <h4>${name}</h4>
                         <h5>${category}</h5>
                     </div>
-                ${images.map(i => `<a data-fancybox="${id}" href="${i}" class="zoom-btn rooms-image invisible"></a>`).join('')}
+                
             </a>
         `;
 
