@@ -1172,6 +1172,16 @@ html {
   background-color: var(--color-accent);
 }
 
+@media (max-width: 700px) {
+  .projects .project-box .project-info {
+    opacity: 1;
+  }
+
+  .projects .project-box::after {
+    opacity: 1;
+  }
+}
+
 .projects .project-box .project-info * {
   color: white;
   text-align: center;
