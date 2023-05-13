@@ -84,8 +84,7 @@ function generateProject(project) {
                         <h4>${name}</h4>
                         <h5>${category}</h5>
                     </div>
-    
-                ${images.map(i => `<a data-fancybox="p-${id}" href="${i}" class="zoom-btn rooms-image invisible"></a>`).join('')}
+                ${images.map(i => `<a data-fancybox="${id}" href="${i}" class="zoom-btn rooms-image invisible"></a>`).join('')}
             </a>
         `;
 
@@ -147,7 +146,7 @@ function generateRoom(room) {
             <div class="room-content">
                 <i class="room-icon bi bi-search"></i>
                 <div class="bottom">
-                    <h4>${category}</h4>
+                    
                 </div>
             </div>
 
