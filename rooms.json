@@ -35,9 +35,9 @@
         "id": "lp-6",
         "category": "Living Space",
         "categoryClass": "living-space",
-        "thumbnail": "./img/rooms/living-spaces/6/1.jpg",
+        "thumbnail": "./img/rooms/living-spaces/6/2.jpg",
         "images": [
-            "./img/rooms/living-spaces/6/2.jpg",
+            "./img/rooms/living-spaces/6/1.jpg",
             "./img/rooms/living-spaces/6/3.jpg"
         ]
     },
@@ -45,9 +45,9 @@
         "id": "lp-7",
         "category": "Living Space",
         "categoryClass": "living-space",
-        "thumbnail": "./img/rooms/living-spaces/7/1.jpg",
+        "thumbnail": "./img/rooms/living-spaces/7/2.jpg",
         "images": [
-            "./img/rooms/living-spaces/7/2.jpg",
+            "./img/rooms/living-spaces/7/1.jpg",
             "./img/rooms/living-spaces/7/3.jpg",
             "./img/rooms/living-spaces/7/4.jpg"
         ]
@@ -115,11 +115,11 @@
         "id": "bed-5",
         "category": "Bedroom",
         "categoryClass": "bedroom",
-        "thumbnail": "./img/rooms/bedrooms/5/1.jpg",
+        "thumbnail": "./img/rooms/bedrooms/5/4.jpg",
         "images": [
             "./img/rooms/bedrooms/5/2.jpg",
             "./img/rooms/bedrooms/5/3.jpg",
-            "./img/rooms/bedrooms/5/4.jpg"
+            "./img/rooms/bedrooms/5/1.jpg"
         ]
     },
     {

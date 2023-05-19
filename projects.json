@@ -29,10 +29,10 @@
     "id": "p-3-1",
     "name": "Mirage Showroom",
     "category": "Milano - Italy (Part 1)",
-    "thumbnail": "./img/projects/mirage-showroom/1.jpg",
+    "thumbnail": "./img/projects/mirage-showroom/2.jpg",
     "description": "We aimed to create an unforgettable experience for the MIRAGE showroom. Therefore, the impact on the visitors is essential to impress the clients so they can enjoy discovering the strength of MIRAGE collections and products.<br>Our main concern was selecting slabs that create an unusual combination between materials and patterns so that they can feel the uniqueness of the products.",
     "images": [
-      "./img/projects/mirage-showroom/2.jpg",
+      "./img/projects/mirage-showroom/1.jpg",
       "./img/projects/mirage-showroom/3.jpg",
       "./img/projects/mirage-showroom/4.jpg",
       "./img/projects/mirage-showroom/5.jpg",
@@ -44,14 +44,22 @@
     "id": "p-3-2",
     "name": "Mirage Showroom",
     "category": "Milano - Italy (Part 2)",
-    "thumbnail": "./img/projects/mirage-showroom/7.jpg",
+    "thumbnail": "./img/projects/mirage-showroom/20.jpg",
     "description": "We aimed to create an unforgettable experience for the MIRAGE showroom. Therefore, the impact on the visitors is essential to impress the clients so they can enjoy discovering the strength of MIRAGE collections and products.<br>Our main concern was selecting slabs that create an unusual combination between materials and patterns so that they can feel the uniqueness of the products.",
     "images": [
-      "./img/projects/mirage-showroom/8.jpg",
-      "./img/projects/mirage-showroom/9.jpg",
-      "./img/projects/mirage-showroom/10.jpg",
+      "./img/projects/mirage-showroom/19.jpg",
+      "./img/projects/mirage-showroom/18.jpg",
+      "./img/projects/mirage-showroom/17.jpg",
+      "./img/projects/mirage-showroom/16.jpg",
+      "./img/projects/mirage-showroom/15.jpg",
+      "./img/projects/mirage-showroom/14.jpg",
+      "./img/projects/mirage-showroom/13.jpg",
+      "./img/projects/mirage-showroom/12.jpg",
       "./img/projects/mirage-showroom/11.jpg",
-      "./img/projects/mirage-showroom/12.jpg"
+      "./img/projects/mirage-showroom/11.jpg",
+      "./img/projects/mirage-showroom/10.jpg",
+      "./img/projects/mirage-showroom/9.jpg",
+      "./img/projects/mirage-showroom/8.jpg"
     ],
     "collaborator": "Khaldoun al Zaatari"
   },
@@ -83,10 +91,10 @@
     "id": "p-6",
     "name": "Sunrise Coffee Shop",
     "category": "Riyadh - Saudi Arabia",
-    "thumbnail": "./img/projects/sunrise-coffee-shop/1.jpg",
+    "thumbnail": "./img/projects/sunrise-coffee-shop/2.jpg",
     "description": "The Earth has Music for those who listen..<br>Adding to our select portfolio of treasures in the Sunshine State, we are pleased to share with you this rare jewel in saudi arabia. Much thought was put into choosing the perfect colors. A rich, celestial gold and blue that complements the bright, solar-inspired interiors of this high-end hospitality interiors.",
     "images": [
-      "./img/projects/sunrise-coffee-shop/2.jpg",
+      "./img/projects/sunrise-coffee-shop/1.jpg",
       "./img/projects/sunrise-coffee-shop/3.jpg"
     ],
     "collaborator": ""

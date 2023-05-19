@@ -73,16 +73,16 @@ function generateProject(project) {
     projectBox.classList.add('px-2');
 
     projectBox.innerHTML = `
-                <a href="${thumbnail}" id="project-${id}" p-desc="${description}" class="project-box fancybox zoom-btn" data-fancybox="${id}">
-                    <div class="project-img">
-                        <img src="${thumbnail}" alt="${name}" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <div class="collaboration">${collaboratorText}</div>
-                        <h4>${name}</h4>
-                        <h5>${category}</h5>
-                    </div>
-                ${images.map(i => `<a data-fancybox="${id}" href="${i}" class="zoom-btn rooms-image invisible"></a>`).join('')}
+            <a href="${thumbnail}" id="project-${id}" p-desc="${description}" class="project-box fancybox zoom-btn" data-fancybox="${id}">
+                <div class="project-img">
+                    <img src="${thumbnail}" alt="${name}" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="collaboration">${collaboratorText}</div>
+                    <h4>${name}</h4>
+                    <h5>${category}</h5>
+                </div>
+            ${images.map(i => `<a data-fancybox="${id}" href="${i}" class="zoom-btn project-image invisible"></a>`).join('')}
             </a>
         `;
 
