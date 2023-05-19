@@ -1113,6 +1113,17 @@ html {
   padding: 0 !important;
 }
 
+/* .projects .slick-slide.slick-current ~ .slick-slide .project-box {
+  transform: perspective(1000px) rotateY(-10deg);
+  transition: all 0.3s ease;
+}
+
+.projects .slick-slide.slick-current + .slick-slide {
+  transform: perspective(1000px) rotateY(10deg);
+  transition: all 0.3s ease;
+} */
+
+
 @media (min-width: 1500px) {
   .projects .slick-slide:not(.slick-current) .project-box {
     margin: 1.3rem;

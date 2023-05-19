@@ -42,14 +42,17 @@ fetch('projects.json')
         });
 
         changeDescription();
+        // tiltProjects();
 
         $('.projects-slider').on('afterChange', function (event, slick, direction) {
             changeDescription();
+            // tiltProjects();
         });
 
 
         $('.projects-slider').on('swipe', function (event, slick, direction) {
             changeDescription();
+            // tiltProjects();
         });
 
         //change project description text
@@ -58,6 +61,24 @@ fetch('projects.json')
             const selectedSlide = projectsList.querySelector('.slick-current .project-box');
             projectDescriptionDiv.innerHTML = selectedSlide.getAttribute('p-desc');
         }
+
+        // function tiltProjects() {
+        //     const currentSlide = document.querySelector('.slick-slide.slick-current');
+        //     const nextSlide = currentSlide.nextSibling;
+        //     const prevSlide = currentSlide.previousSibling;
+        //     console.log(nextSlide);
+
+        //     const nextSlideProject = nextSlide.querySelector('.project-box');
+        //     const prevSlideProject = prevSlide.querySelector('.project-box');
+        //     console.log(nextSlideProject);
+        //     console.log(prevSlideProject);
+         
+        //     prevSlideProject.style.transform = 'perspective(1000px) rotateY(-60deg)';
+        //     prevSlideProject.style.transition = 'all 0.3s ease';
+          
+        //     nextSlideProject.style.transform = 'perspective(1000px) rotateY(10deg)';
+        //     nextSlideProject.style.transition = 'all 0.3s ease';
+        //   }          
     })
     .catch(error => console.error(error));
 
