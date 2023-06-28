@@ -1220,13 +1220,13 @@ html {
   left: 0;
   padding: 1rem;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-align: center;
   width: 100%;
 }
 
 .projects .project-box .project-info .collaboration span {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .projects .project-box:hover::after {
