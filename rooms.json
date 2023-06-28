@@ -53,25 +53,6 @@
         ]
     },
     {
-        "id": "lp-8",
-        "category": "Living Space",
-        "categoryClass": "living-space",
-        "thumbnail": "./img/rooms/living-spaces/8/1.jpg",
-        "images": [
-            "./img/rooms/living-spaces/8/2.jpg"
-        ]
-    },
-    {
-        "id": "lp-9",
-        "category": "Living Space",
-        "categoryClass": "living-space",
-        "thumbnail": "./img/rooms/living-spaces/9/1.jpg",
-        "images": [
-            "./img/rooms/living-spaces/9/2.jpg",
-            "./img/rooms/living-spaces/9/3.jpg"
-        ]
-    },
-    {
         "id": "bed-1",
         "category": "Bedroom",
         "categoryClass": "bedroom",
@@ -121,16 +102,6 @@
         ]
     },
     {
-        "id": "bat-2",
-        "category": "Bathroom",
-        "categoryClass": "bathroom",
-        "thumbnail": "./img/rooms/bathrooms/2/1.jpg",
-        "images": [
-            "./img/rooms/bathrooms/2/2.jpg",
-            "./img/rooms/bathrooms/2/3.jpg"
-        ]
-    },
-    {
         "id": "bat-3",
         "category": "Bathroom",
         "categoryClass": "bathroom",
@@ -156,15 +127,6 @@
         "categoryClass": "bathroom",
         "thumbnail": "./img/rooms/bathrooms/5/1.jpg",
         "images": []
-    },
-    {
-        "id": "bat-6",
-        "category": "Bathroom",
-        "categoryClass": "bathroom",
-        "thumbnail": "./img/rooms/bathrooms/6/1.jpg",
-        "images": [
-            "./img/rooms/bathrooms/6/2.jpg"
-        ]
     },
     {
         "id": "bat-7",
