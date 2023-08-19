@@ -532,6 +532,7 @@ html {
   font-weight: 100;
   margin-bottom: 0.5em;
   padding: 0 1.4rem;
+  display: none;
 }
 
 #hero h1::before,
@@ -550,6 +551,49 @@ html {
 }
 
 #hero h1::after {
+  right: 0;
+  transform: translateX(100%) translateY(-50%);
+}
+
+#hero .title-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding-inline: 1rem;
+}
+
+#hero .title-container img {
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  object-fit: contain;
+}
+
+#hero .title-container::before,
+#hero .title-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  z-index: 20;
+}
+
+@media (max-width: 600px) {
+  #hero .title-container::before,
+#hero .title-container::after {
+  display: none;
+}
+}
+
+#hero .title-container::before {
+  left: 0;
+  transform: translateX(-100%) translateY(-50%);
+}
+
+#hero .title-container::after {
   right: 0;
   transform: translateX(100%) translateY(-50%);
 }
