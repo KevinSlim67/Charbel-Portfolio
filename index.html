@@ -29,17 +29,6 @@
 
 
 <body>
-
-    <audio id="background-music" controls autoplay loop style="display: none;">
-        <source src="./music.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-    
-    <script>
-        var audio = document.getElementById("background-music");
-        audio.volume = 0.2;
-    </script>
-
     <!--page start-->
     <div class="page ttm-bgcolor-grey">
 
@@ -998,5 +987,24 @@
 
     <!-- Javascript end-->
 </body>
+
+<!-- <audio id="background-music" controls loop preload="auto" style="display: none;">
+    <source src="./music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("background-music");
+        if (audio) {
+            audio.volume = 0.2;
+            audio.play();
+        }
+    });
+
+</script> -->
+
+
 
 </html>
