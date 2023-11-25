@@ -583,9 +583,9 @@ html {
 
 @media (max-width: 600px) {
   #hero .title-container::before,
-#hero .title-container::after {
-  display: none;
-}
+  #hero .title-container::after {
+    display: none;
+  }
 }
 
 #hero .title-container::before {
@@ -617,8 +617,8 @@ html {
 }
 
 #hero .button-3 {
-  padding: 0.8rem 1.4rem;
-  font-size: 1.2rem !important;
+  padding: 0.5rem 1.4rem;
+  font-size: 1rem !important;
 }
 
 #hero rs-arrow {
@@ -732,6 +732,7 @@ html {
 #about p {
   font-size: 1.2rem;
   line-height: 2rem;
+  text-align: justify;
 }
 
 #about .about-img {
@@ -789,6 +790,227 @@ html {
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.9);
   }
+}
+
+/* ================================================== */
+
+/* Project Carousel ================================== */
+
+.single-project {
+  position: relative;
+  /* height: 100vh; */
+  background-color: rgb(240, 240, 240);
+}
+
+.single-project::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  /* background: rgb(0, 0, 0); */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0,212,255,0) 100%);
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.single-project .section-title {
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 21;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (max-width: 650px) {
+  .single-project .section-title {
+    top: 1.5rem;
+  }
+
+  .single-project .section-title h2 {
+    font-size: 1.2rem;
+  }
+
+  .single-project .section-title h3 {
+    font-size: 0.7rem;
+    margin-bottom: 0 !important;
+  }
+}
+
+.project-carousel {
+  height: 100%;
+}
+
+.project-carousel .slide {
+  width: 100%;
+  height: 100%;
+}
+
+.project-carousel .slick-list {
+  padding-inline: 0 !important;
+  height: 100%;
+}
+
+.project-carousel .slick-track {
+  height: 100%;
+}
+
+.project-carousel .slick-slide,
+.project-carousel .slick-slide > div {
+  height: 100%;
+}
+
+.project-carousel .slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-carousel .slick-next,
+.project-carousel .slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #fff;
+  padding: 1.5rem;
+  outline: none !important;
+  transition: all 0.4s ease;
+}
+
+.project-carousel .slick-next:hover,
+.project-carousel .slick-prev:hover {
+  color: var(--accent-color);
+}
+
+.project-carousel .slick-prev {
+  left: 30px;
+}
+
+.project-carousel .slick-next {
+  right: 30px;
+}
+
+@media (max-width: 650px) {
+  .project-carousel .slick-prev {
+    left: 10px;
+    padding: 0;
+  }
+  
+  .project-carousel .slick-next {
+    right: 10px;
+    padding: 0;
+  }
+}
+
+/* =================================================== */
+
+/* Forest =========================================== */
+
+#forest .slider {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  height: 400px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+#forest .slider a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 774px) {
+  #forest .slider {
+    height: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  #forest .slider {
+    height: 250px;
+  }
+}
+
+@media (max-width: 440px) {
+  #forest .slider {
+    height: 200px;
+  }
+}
+
+#forest .slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+
+#forest .slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  text-align: center;
+}
+
+#forest .slider ul li img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+#forest a.control_prev,
+#forest a.control_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: block;
+  padding: 20px 10px;
+  width: auto;
+  height: auto;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#forest a.control_prev:hover,
+#forest a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+#forest a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+#forest a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+#forest .slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
 }
 
 /* ================================================== */
@@ -1166,7 +1388,6 @@ html {
   transform: perspective(1000px) rotateY(10deg);
   transition: all 0.3s ease;
 } */
-
 
 @media (min-width: 1500px) {
   .projects .slick-slide:not(.slick-current) .project-box {

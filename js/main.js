@@ -185,6 +185,23 @@ $(".typed").each(function () {
     });
 });
 
+$(".project-carousel").slick({
+    speed: 300,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slick-prev">&#10094;</button>',
+    nextArrow: '<button class="slick-next">&#10095;</button>'
+});
+
+
 
 $('.brands-slider').slick({
     slidesToShow: 5,
