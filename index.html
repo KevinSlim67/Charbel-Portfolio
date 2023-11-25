@@ -27,6 +27,17 @@
 
 </head>
 
+<audio id="background-music" controls autoplay style="display: none;">
+    <source src="./music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    var audio = document.getElementById("background-music");
+    audio.volume = 0.2;
+</script>
+
+
 <body>
 
     <!--page start-->
@@ -964,16 +975,6 @@
 
     </div><!-- page end -->
     <!-- Javascript -->
-
-    <audio id="background-music" controls autoplay style="display: none;">
-        <source src="./music.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-
-    <script>
-        var audio = document.getElementById("background-music");
-        audio.volume = 0.2;
-      </script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
